@@ -1,0 +1,30 @@
+.doctor-card {
+  background: #fff;
+  border-radius: 4px;
+}
+.doctor-card .ant-card-body .avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.doctor-card .ant-card-body .name {
+  padding-top: 14px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+}
+.doctor-card .ant-card-body .staff {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #777;
+}
+.doctor-card .ant-card-body .address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666;
+}

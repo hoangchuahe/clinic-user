@@ -1,0 +1,18 @@
+.spanx{
+  flex: auto 1 1;
+}
+.header{
+  min-width: 600px;
+  border: none;
+  align-items: center;
+}
+.headerStyle{
+  display: flex;
+  height: 100px;
+  background-color: white;
+}
+.Logo{
+  width: 200px;
+  height: 47px;
+  align-self: center;
+}
