@@ -79,6 +79,7 @@ const Appointment = () => {
     ) : null;
   };
   const dateCellRender = (value) => {
+    // console.log(value);
     const listData = getListData(value);
     return (
       <ul className="events">
@@ -90,6 +91,19 @@ const Appointment = () => {
       </ul>
     );
   };
-  return <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />;
+  // const headerRender = (value) => {
+
+  // }
+  return (
+    <>
+      <div className='appointment'>
+        <div style={{color:"white", fontSize:"50px", fontWeight:"700", lineHeight: "1em",}}>Appointment</div>
+        <div style={{color:"white", fontSize:"25px" }}> Home | Appointment</div>
+      </div>
+      <div style={{display:'flex', justifyContent:'center', marginBottom:'40px', marginTop:'40px'}}>
+        <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} className='calendar' />
+      </div>
+    </>
+  );
 };
 export default Appointment;
