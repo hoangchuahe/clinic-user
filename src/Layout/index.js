@@ -6,13 +6,6 @@ import { Outlet } from 'react-router-dom';
 import './style.css'
 import { Menu } from 'antd';
 // import { useState } from 'react';
-const contentStyle = {
-  textAlign: 'center',
-  lineHeight: '120px',
-  color: '#fff',
-  padding: 16,
-  // height:'100%'
-};
 
 const AppLayout = () => {
   const getItem = (label, key, icon, children, type) => {
@@ -35,7 +28,6 @@ const AppLayout = () => {
   ];
 
   const navigate = useNavigate()
-
   const onClick = (e) => {
     navigate(e.key)
   };
@@ -47,9 +39,16 @@ const AppLayout = () => {
         <Menu onClick={onClick} mode="horizontal" items={items} className="header"/>
       </Layout.Header>
       <Layout>
-        <Layout.Content style={contentStyle}>
+        <Layout.Content className='contentStyle'>
           <Outlet />
         </Layout.Content>
+      </Layout>
+      <Layout>
+        <Layout.Footer>
+          <div style={{marginTop:'20px'}}>
+            Footer
+          </div>
+        </Layout.Footer>
       </Layout>
     </Layout>
   )

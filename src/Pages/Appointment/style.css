@@ -13,7 +13,42 @@
   .notes-month {
     font-size: 28px;
     text-align: center;
+    margin-right: 40px;
   }
   .notes-month section {
     font-size: 28px;
+  }
+  .appointment{
+    padding-top: 5.9em !important;
+    padding-bottom: 6em !important;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7 url(https://dental-clinic.ancorathemes.com/wp-content/uploads/2017/01/bg-1.png?id=483) !important;
+  }
+  .calendar{
+    width: 70%;
+    border: 1px solid rgba(5, 5, 5, 0.06); 
+  }
+
+  .ant-picker-calendar .ant-picker-calendar-header{
+    justify-content: center;
+    background-color: #48b3d1 !important;
+    /* border-color: 2px #48b3d1 !important;; */
+  }
+  .ant-radio-button-wrapper{
+    position: unset;
+  }
+  /* .ant-picker-calendar .ant-picker-panel .ant-picker-body{
+    padding: auto;
+  } */
+  .ant-picker-calendar .ant-picker-date-panel .ant-picker-body{
+    padding: 0;
+  }
+  /* .ant-layout *{
+    text-align: center;
+    background-color: #40c2b2 !important;
+  } */
+  thead{
+    text-align: center;
+    background-color: #40c2b2 !important;
   }

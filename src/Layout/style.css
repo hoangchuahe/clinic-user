@@ -10,9 +10,19 @@
   display: flex;
   height: 100px;
   background-color: white;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  width: 100%;
 }
 .Logo{
   width: 200px;
   height: 47px;
   align-self: center;
 }
+.contentStyle{
+  padding: 16;
+  text-align: center;
+  /* line-height: 120px; */
+  background-color: white;
+};
