@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import './style.css'
 import { Menu } from 'antd';
+import Footer from 'Component/Footer';
 // import { useState } from 'react';
 
 const AppLayout = () => {
@@ -18,13 +19,13 @@ const AppLayout = () => {
     };
   }
   const items = [
-    getItem('Home', 'home', ),
-    getItem('Features', 'features', ),
-    getItem('Services', 'services', ),
-    getItem('Doctor', 'doctors', ),
-    getItem('Blog', 'blog', ),
-    getItem('Appointment', 'appointment', ),
-    getItem('Contact', 'contact', ),
+    getItem('Home', 'home',),
+    getItem('Features', 'features',),
+    getItem('Services', 'services',),
+    getItem('Doctor', 'doctors',),
+    getItem('Blog', 'blog',),
+    getItem('Appointment', 'appointment',),
+    getItem('Contact', 'contact',),
   ];
 
   const navigate = useNavigate()
@@ -34,9 +35,9 @@ const AppLayout = () => {
   return (
     <Layout>
       <Layout.Header className='headerStyle'>
-        <img src={NavLogo} alt='' className='Logo'/>
+        <img src={NavLogo} alt='' className='Logo' />
         <span className='spanx'></span>
-        <Menu onClick={onClick} mode="horizontal" items={items} className="header"/>
+        <Menu onClick={onClick} mode="horizontal" items={items} className="header" />
       </Layout.Header>
       <Layout>
         <Layout.Content className='contentStyle'>
@@ -45,9 +46,7 @@ const AppLayout = () => {
       </Layout>
       <Layout>
         <Layout.Footer>
-          <div style={{marginTop:'20px'}}>
-            Footer
-          </div>
+          <Footer></Footer>
         </Layout.Footer>
       </Layout>
     </Layout>

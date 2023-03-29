@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { doctors } from '../../doctorData';
 const DoctorCard = () => {
   return (
-    <Row gutter={16} style={{justifyContent:'center'}}>
+    <Row gutter={16} style={{ justifyContent: 'center', marginLeft: '0px', marginRight: '0px' }}>
       {doctors.map((data) => (
         <Col span={6} key={data.id}>
           <Card className='doctor-card'>
